@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Comunicación de Datos: Property Binding y Data Binding</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+background:#f4f6f8;
+margin:0;
+padding:0;
+}
+
+section{
+padding:40px;
+margin:40px;
+background:white;
+border-radius:10px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.1);
+}
+
+h1,h2{
+color:#2c3e50;
+}
+
+img{
+max-width:600px;
+display:block;
+margin:auto;
+}
+
+pre{
+background:#272822;
+color:#f8f8f2;
+padding:15px;
+border-radius:8px;
+overflow:auto;
+}
+
+.ejemplo{
+background:#ecf0f1;
+padding:15px;
+border-radius:8px;
+margin-top:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<section>
+<h1>Comunicación de Datos</h1>
+<h2>Property Binding, Data Binding y Manejo de Eventos</h2>
+
+<p>
+En el desarrollo de aplicaciones, los componentes de la interfaz necesitan comunicarse con los datos del sistema.
+Esta comunicación se logra mediante técnicas como:
+</p>
+
+<ul>
+<li>Property Binding</li>
+<li>Data Binding</li>
+<li>Manejo de Eventos</li>
+</ul>
+
+<p>
+Estas técnicas permiten conectar los datos con la interfaz del usuario.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>¿Qué es Data Binding?</h2>
+
+<p>
+El <b>Data Binding</b> es una técnica que permite conectar los datos de una aplicación con los elementos de la interfaz de usuario.
+</p>
+
+<p>
+Esto significa que cuando los datos cambian, la interfaz puede actualizarse automáticamente.
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/59/MVVM_Pattern.png">
+
+<p>
+Este concepto es muy usado en frameworks modernos como Angular, React o WPF.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Tipos de Data Binding</h2>
+
+<ul>
+<li><b>One Way Binding</b> → Los datos van del modelo a la interfaz</li>
+<li><b>Two Way Binding</b> → Los datos van del modelo a la interfaz y de la interfaz al modelo</li>
+</ul>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Databinding.png">
+
+</section>
+
+
+<section>
+
+<h2>¿Qué es Property Binding?</h2>
+
+<p>
+El <b>Property Binding</b> consiste en vincular una propiedad de un elemento HTML con un valor de datos.
+</p>
+
+<p>
+Esto permite que una propiedad del elemento cambie dependiendo del valor de los datos.
+</p>
+
+<h3>Ejemplo conceptual</h3>
+
+<pre>
+&lt;img src="imagen.jpg"&gt;
+</pre>
+
+<p>
+Aquí la propiedad <b>src</b> del elemento <b>img</b> está vinculada a una imagen.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Ejemplo de Data Binding (conceptual)</h2>
+
+<pre>
+&lt;p&gt;Nombre del usuario: Juan&lt;/p&gt;
+</pre>
+
+<div class="ejemplo">
+<p>Nombre del usuario: Juan</p>
+</div>
+
+<p>
+Aquí los datos del usuario se muestran directamente en la interfaz.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Manejo de Eventos</h2>
+
+<p>
+El manejo de eventos permite ejecutar acciones cuando el usuario interactúa con la interfaz.
+</p>
+
+<p>
+Por ejemplo:
+</p>
+
+<ul>
+<li>Click en un botón</li>
+<li>Escribir en un campo</li>
+<li>Seleccionar una opción</li>
+</ul>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Event-driven_programming.svg">
+
+</section>
+
+
+<section>
+
+<h2>Ejemplo de evento en HTML</h2>
+
+<pre>
+&lt;button&gt;Hacer clic&lt;/button&gt;
+</pre>
+
+<div class="ejemplo">
+<button>Hacer clic</button>
+</div>
+
+<p>
+El botón representa una acción del usuario.
+En sistemas reales este botón ejecutaría una función o proceso.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Ejemplo de formulario (interacción del usuario)</h2>
+
+<pre>
+&lt;input type="text" placeholder="Escribe tu nombre"&gt;
+</pre>
+
+<div class="ejemplo">
+<input type="text" placeholder="Escribe tu nombre">
+</div>
+
+<p>
+Aquí el usuario interactúa ingresando datos.
+Este tipo de interacción es la base del Data Binding en aplicaciones modernas.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Importancia del Data Binding</h2>
+
+<ul>
+<li>Facilita la comunicación entre datos y la interfaz</li>
+<li>Reduce la cantidad de código</li>
+<li>Permite interfaces dinámicas</li>
+<li>Mejora la organización del software</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>Conclusión</h2>
+
+<p>
+El <b>Data Binding</b>, el <b>Property Binding</b> y el <b>Manejo de Eventos</b> son conceptos fundamentales para el desarrollo de interfaces modernas.
+</p>
+
+<p>
+Permiten que los datos y la interfaz trabajen juntos, haciendo aplicaciones más dinámicas y fáciles de mantener.
+</p>
+
+<p>
+Estos conceptos se utilizan en tecnologías modernas como Angular, React y Vue.
+</p>
+
+</section>
+
+</body>
+</html>
